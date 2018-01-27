@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Checkout</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__block-1">
+				<button class="btn"><i class="fas fa-long-arrow-alt-left"></i>	Go back</button>
+			</div>
+			<div class="header__block-2">
+				<a class="header__logo-link" href="#">
+					<img class="header__logo" src="imgs/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="header__block-3">
+				<button class="btn"><i class="fas fa-user"></i>Sign in</button>
+			</div>
+		</header>
+		<main class="main">
+		<form id="translate">
+			<section class="order">
+				<div class="order__cart">
+					<div class="order__cart-wrapper">	
+						<div class="order__cart-title">	
+							<i class="fas fa-clipboard"></i>
+							<h4>Your order</h4>
+						</div>
+						<div class="order__cart-details">
+							<div class="order__cart-details-block">
+								<p class="order__cart-details-block-heading">
+									Items
+								</p>
+								<p class="order__cart-details-block-description">
+									2 documents
+								</p>
+							</div>
+							<div class="order__cart-details-block">
+								<p class="order__cart-details-block-heading">
+									Details
+								</p>
+								<p class="order__cart-details-block-description">
+									2 languages
+								</p>
+							</div>
+							<div class="order__cart-details-block">
+								<p class="order__cart-details-block-heading">
+									Price
+								</p>
+								<p class="order__cart-details-block-description" value="USD 696.06">
+									$ 696.06
+								</p>
+							</div>
+							<div class="order__cart-details-block">
+								<p class="order__cart-details-block-heading">
+									Delivery
+								</p>
+								<p class="order__cart-details-block-description">
+									48 hours*
+								</p>
+							</div>
+						</div>
+					</div>	
+					<div class="order__cart-buttons">
+							<button type="submit" id="submit" form="translate" class="btn btn-active width">
+								Place order
+							</button>
+							<button type="submit" id="submit" form="translate" class="btn width">
+								Print a quote
+							</button>
+					</div>		
+				</div>
+				<div class="order__help">
+					<div class="order__help-left">
+						<i class="far fa-life-ring"></i>
+					</div>
+					<div class="order__help-right">
+						<h4 class="order__help-right-heading">Help center</h4>
+						<p class="order__help-right-text">If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+						<p class="order__help-right-contacts">
+							<a href="tel">+971(0)555 555</a>
+							<a href="mailto:help@qtest.com">help@qtest.com</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="select">
+				<h2 class="select__heading">
+					Select what you want to translate					
+				</h2>
+				<div class="select__label-wrapper">	
+					<label for="website" class="select__item">
+						<input hidden required type="radio" name="radio" value="website" id="website">
+						<div class="select__item-wrapper">
+							<img src="imgs/website.png" alt="Website" class="select__item-img">
+							<p class="select__item-text">Website</p>
+						</div>
+					</label>
+					<label for="documents" class="select__item">
+						<input hidden required type="radio" name="radio" value="documents" id="documents">
+						<div class="select__item-wrapper">
+							<img src="imgs/documents.png" alt="Documents" class="select__item-img">
+							<p class="select__item-text">Documents</p>
+						</div>
+					</label>
+					<label for="social-account" class="select__item">
+						<input hidden required type="radio" name="radio" value="social-account" id="social-account">
+						<div class="select__item-wrapper">
+							<img src="imgs/social-account.png" alt="Social Account" class="select__item-img">
+							<p class="select__item-text">Social Account</p>
+						</div>
+					</label>					
+				</div>
+			</section>
+			<section class="upload">
+				<h3 class="section-heading"><span class="section-heading-text">Upload your documents</span> <span class="section-heading-small">(Doc, Docx, Text, PDF, Markdown)</span></h3>
+				<label for="file">
+					<input hidden reqiured type="file" name="file" id="file">
+					<span class="input-file">
+						<i class="fas fa-cloud-upload-alt"></i>Upload a new file
+					</span>
+				</label>
+				<table class="upload__table">
+					<tr>
+						<th class="upload__table-th">File name</th>
+						<th class="upload__table-th hidden-second">File size</th>
+						<th class="upload__table-th hidden-first">Number of words</th>
+						<th class="upload__table-th center">Remove</th>
+					</tr>
+					<tr>
+						<td class="upload__table-td"><i class="fas fa-file-alt"></i>business_operations.docx</td>
+						<td class="upload__table-td hidden-second">78kb</td>
+						<td class="upload__table-td hidden-first">842</td>
+						<td class="upload__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
+					</tr>
+					<tr>
+						<td class="upload__table-td"><i class="fas fa-file-alt"></i>business_financial.docx</td>
+						<td class="upload__table-td hidden-second">26kb</td>
+						<td class="upload__table-td hidden-first">2,326</td>
+						<td class="upload__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
+					</tr>
+				</table>
+			</section>
+			<section class="choose">
+				<h3 class="section-heading"><span class="section-heading-text">Choose your languages pairings</span></h3>
+				<div class="choose__select-wrapper">
+					<span class="choose__text">From</span>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option selected class="choose__select-option" value="english">English</option>
+							<option class="choose__select-option" value="arabic">Arabic</option>
+							<option class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+				</div>
+				<div class="choose__select-wrapper">
+					<span class="choose__text">To</span>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option class="choose__select-option" value="english">English</option>
+							<option selected class="choose__select-option" value="arabic">Arabic</option>
+							<option class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option  class="choose__select-option" value="english">English</option>
+							<option class="choose__select-option" value="arabic">Arabic</option>
+							<option selected class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+					<a class="choose__del-lang" href="#"><i class="fas fa-trash choose__icon-add"></i></a>
+					<button class="choose__btn-add btn"><i class="fas fa-plus"></i>Add</button>
+				</div>
+			</section>
+			<div class="sections-wrapper">
+				<section class="select-tone">
+					<h3 class="section-heading"><span class="section-heading-text">Select your desired tone</span></h3>
+					<div class="select-tone__label-wrapper">	
+						<label for="friendly" class="select-tone__item">
+							<input hidden required type="radio" name="radio" value="friendly" id="friendly">
+							<div class="select-tone__btn-wrapper">
+								<i class="fas fa-comments"></i>Friendly / Casual
+							</div>
+						</label>
+						<label for="corporate" class="select-tone__item">
+							<input hidden required type="radio" name="radio" value="corporate" id="corporate">
+							<div class="select-tone__btn-wrapper">
+								<i class="fas fa-suitcase"></i>Corporate / Pro</button>
+							</div>
+						</label>
+						<label for="media" class="select-tone__item">
+							<input hidden required type="radio" name="radio" value="media" id="media">
+							<div class="select-tone__btn-wrapper">
+								<i class="fas fa-bullhorn"></i>Media / Formal
+							</div>
+						</label>
+					</div>					
+				</section>
+				<section class="urgent">
+					<h3 class="section-heading"><span class="section-heading-text">Tell us how urgent this job is</span></h3>
+					<div class="urgent__range">
+						<input type="range" min="0" max ="100">
+					</div>
+					<div class="urgent__span-wrapper">
+						<span class="urgent__span">I got time</span>
+						<span class="orange-text urgent__span">Average</span>
+						<span class="urgent__span">Yesterday</span>
+					</div>
+					<div class="urgent__timeline">
+						<div class="urgent__timeline-left"><i class="fas fa-info-circle"></i></div>
+						<div class="urgent__timeline-right">
+							<h4 class="urgent__timeline-right-heading">Timeline info</h4>
+							<p class="urgent__timeline-right-text">With an <span class="orange-text urgent__span">average</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="payment">
+				<h3 class="section-heading"><span class="section-heading-text">Sign up and choose a payment method</span></h3>
+				<div class="payment__sign-in">
+					Already have an account with us?
+					<a class="payment__sign-in-link" href="#">Sign in</a>
+				</div>
+				<div class="payment__input">
+					<label for="name" class="payment__input-label">Full name</label>
+					<input required class="payment__input-field" id="name" type="text" minlength=3 pattern="[a-zA-Z\s\.\-]*$">
+				</div>
+				<div class="payment__wrapper-for-inputs">
+					<div class="payment__input">
+						<label for="name" class="payment__input-label">Email adress</label>
+						<input required class="payment__input-field" id="name" type="email">
+					</div>
+					<div class="payment__input">
+						<label for="name" class="payment__input-label">Choose a password</label>
+						<input required class="payment__input-field" id="name" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+					</div>
+				</div>
+				<div class="payment__method">
+					<label for="card" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="card" id="card">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/visa.png" alt="visa" class="payment__method-img">
+							<img src="imgs/mastercard.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+					<label for="pay-pal" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="pay-pal" id="pay-pal">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/paypal.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+					<label for="amazon" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="amazon" id="amazon">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/amazon.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+				</div>
+				<div class="payment__card">
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Curd number</label>
+						<input required class="card-number payment__card-input-field" id="name" type="number" pattern="[0-9]{16,16}" autocomplete="cc-number" maxlength=16>
+					</div>
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Expiry date</label>
+						<input required class="expiry-date payment__card-input-field" autocomplete="cc-exp" id="name" type="date">
+					</div>
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Code</label>
+						<input required class="code payment__card-input-field" autocomplete="cc-csc" id="name" type="number" pattern="[0-9]{3}" maxlength=3>
+					</div>					
+				</div>
+				<div class="payment__submit-form">
+					<div class="payment__submit-form-wrapper">
+						<input required type="checkbox" name="terms" value="argee"> 
+						<span class="payment__terms">I agree to the Terms &amp; Conditions</span>
+					</div>
+					<div class="payment__submit-form-wrapper">
+						<button type="submit" id="submit" form="translate" class="btn btn-active width">
+							Place order
+						</button>				
+					</div>
+					<div class="payment__submit-form-wrapper">
+						<button type="submit" id="submit" form="translate" class="btn width">
+							Print a quote
+						</button>							
+					</div>
+				</div>
+			</section>
+			</form>
+		</main>
+	</div>
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__block">
+				<div class="footer__block-left">
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="footer__block-right">
+					<div class="footer__block-heading">
+						What we do
+					</div>
+					<div class="footer__block-text">
+						<i>We provide a full range of language services including content development, document, website and social media acoounts translations.</i>
+					</div>
+				</div>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-left">
+					<i class="far fa-compass"></i>
+				</div>
+				<div class="footer__block-right">
+					<div class="footer__block-heading">
+						Our main office
+					</div>
+					<div class="footer__block-text">
+						<address class="footer__block-text-address">
+							<p class="footer__block-text-p">Dubai, UAE</p>
+							<p class="footer__block-text-p">P.O. Box: 502735</p>
+							<p class="footer__block-text-p">Phone: <a href="tel">+971 (0) 44278128</a></p>
+						</address>
+					</div>
+				</div>
+			</div>
+			<div class="footer__block">
+				<div class="footer__block-left">
+					<i class="fas fa-share-alt"></i>
+				</div>
+				<div class="footer__block-right">
+					<div class="footer__block-heading">
+						Connect with us
+					</div>
+					<div class="footer__block-text">
+						<p class="footer__block-text-p">
+							<a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+						</p>
+						<p class="footer__block-text-p">
+							<a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+						</p>
+						<p class="footer__block-text-p">
+							<a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__block >
+				<a href="#"><img class="footer__logo" src="imgs/logo-footer.png" alt="logo"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
